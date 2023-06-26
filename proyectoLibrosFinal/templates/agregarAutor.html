@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Autor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body class="container mt-5">
+    <div class="bg-dark display-1 text-center text-light">
+        <img src="{% static 'images/libro.png' %}" alt="user_icon" width="100px" >{{titulo}} autor</div>
+    <form action="" method="post">
+        <table class="table">
+            {{form.as_table}}
+            {% csrf_token %}
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="btn btn-dark float-end" value="Guardar">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <a href="/" class="btn btn-outline-secondary float-center">Volver a Inicio</a>
+    <a href="/autores" class="btn btn-outline-dark float-center">Lista de Autores</a>
+    
+</body>
+</html>
+
+<!-- Podemos trabajar el mismo back con diferentes front, en variadas interfaces. Respondiendo a las solicitudes requeridas en la url, eso lo hacemos con api -->
+    
+</body>
+</html>
