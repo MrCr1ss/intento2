@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Menú Principal</title>
+</head>
+<body class="container mt-5">
+    <div class="bg-dark display-1 text-center text-light">
+        <img src="{% static 'images/libro.png' %}" alt="user_icon" width="100px">Biblioteca</div><br>
+    <table class="table">
+        <th>
+            <a href="/agregarAutor" class="btn btn-dark ">Agregar Autor</a>
+        </th>
+        <th>
+            <a href="/autores" class="btn btn-secondary ">Listado de Autores</a>
+        </th>
+        <th>
+            <a href="/agregar" class="btn btn-dark">Agregar Libros</a>
+        </th>
+        <th>
+            <a href="/libros" class="btn btn-secondary">Listado de Libros</a>
+        </th>
+        <th>
+            <a href="/admin" class="btn btn-outline-dark float-end">Libreria Admin</a>
+        </th>
+        <th>
+            <a href="/autoresapi" class="btn btn-success">Autores API REST</a>
+        </th>
+        <th>
+            <!-- Botón para salir -->
+            <a href="/accounts/logout" class="btn btn-danger">Cerrar Sesión</a>
+        </th>
+        
+    </table>
+    <!-- Cristóbal Venegas/ Paula Villagra. Evaluación 3, BackEnd -->
+    
+    
+    
+    
+    
+</body>
+</html>
+
