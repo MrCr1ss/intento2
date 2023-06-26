@@ -81,7 +81,7 @@ pymysql.install_as_MySQLdb()
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME':'librohost',
         'USER': 'admin',
         'PASSWORD': 'admin123',
